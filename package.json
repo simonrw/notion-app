@@ -1,7 +1,7 @@
 {
     "name": "Notion",
     "productName": "Notion",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Notion",
     "main": "src/index.js",
     "scripts": {
@@ -32,6 +32,9 @@
         "electron-builder": "^23.6.0"
     },
     "build": {
-        "appId": "com.simonrw.notion"
+        "appId": "com.simonrw.notion",
+        "snap": {
+            "publish": ["github"]
+        }
     }
 }
