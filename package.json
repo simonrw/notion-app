@@ -1,7 +1,6 @@
 {
     "name": "Notion",
-    "productName": "Notion",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Notion",
     "main": "src/index.js",
     "scripts": {
@@ -32,7 +31,11 @@
         "electron-builder": "^23.6.0"
     },
     "build": {
+        "productName": "Notion",
         "appId": "com.simonrw.notion",
+        "directories": {
+            "output": "dist"
+        },
         "linux": {
             "category": "development",
             "icon": "build/icon.png",

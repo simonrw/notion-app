@@ -25,10 +25,10 @@ pkgs.stdenv.mkDerivation (final: {
 
     mkdir -p $out/bin $out/share/notion $out/share/applications
     cp -a ${final.appimageContents}/{locales,resources} $out/share/notion
-    # cp -a ${final.appimageContents}/mind.desktop $out/share/applications/markmind.desktop
+    cp -a ${final.appimageContents}/notion.desktop $out/share/applications/notion.desktop
     cp -a ${final.appimageContents}/usr/share/icons $out/share
-    # substituteInPlace $out/share/applications/markmind.desktop \
-    #   --replace 'Exec=AppRun' 'Exec=markmind'
+    substituteInPlace $out/share/applications/notion.desktop \
+      --replace 'Exec=AppRun' 'Exec=notion'
 
     runHook postInstall
   '';
