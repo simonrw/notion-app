@@ -33,22 +33,10 @@
     },
     "build": {
         "appId": "com.simonrw.notion",
-        "mac": {
-            "target": []
-        },
-        "win": {
-            "target": []
-        },
         "linux": {
-            "category": "Utility",
-            "executableName": "notion",
-            "target": [
-                "AppImage"
-            ],
-            "desktop": {
-                "Name": "Notion",
-                "Terminal": false
-            }
+            "category": "development",
+            "icon": "build/icon.png",
+            "target": ["AppImage"]
         }
     }
 }
