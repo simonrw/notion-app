@@ -1,7 +1,7 @@
 {
     "name": "Notion",
     "productName": "Notion",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Notion",
     "main": "src/index.js",
     "scripts": {
