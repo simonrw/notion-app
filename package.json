@@ -38,7 +38,7 @@
         },
         "linux": {
             "category": "Office",
-            "icon": "build/icon.png",
+            "icon": "build/256x256.png",
             "target": ["AppImage"],
             "desktop": {
                 "StartupNotify": true
