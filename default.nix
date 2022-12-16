@@ -1,9 +1,9 @@
 { pkgs ? import <nixpkgs> { } }:
 pkgs.stdenv.mkDerivation (final: {
   pname = "notion";
-  version = "0.0.3";
+  version = "0.0.4";
 
-  src = ./dist/Notion-0.0.3.AppImage;
+  src = ./dist/Notion-0.0.4.AppImage;
   # src = builtins.fetchurl {
   #   url = "https://github.com/simonrw/notion-app/releases/download/v${final.version}/Notion-${final.version}.AppImage";
   #   sha256 = "sha256:1vgay8pdd9w5kwwhhx73nbgj23n9c69jvy9y6apzm7ba3jjj3yxz";

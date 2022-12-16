@@ -1,7 +1,7 @@
 {
     "name": "Notion",
-    "version": "0.0.4",
-    "description": "Notion",
+    "version": "0.0.5",
+    "description": "Local Notion app",
     "main": "src/index.js",
     "scripts": {
         "pack": "electron-builder --dir",
@@ -37,9 +37,12 @@
             "output": "dist"
         },
         "linux": {
-            "category": "development",
+            "category": "Office",
             "icon": "build/icon.png",
-            "target": ["AppImage"]
+            "target": ["AppImage"],
+            "desktop": {
+                "StartupNotify": true
+            }
         }
     }
 }
